@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Поиск авто</title>
 </head>
 <body>
+    <div>
+        <h1>Поиск авто</h1>
+    </div>
+    <form action="https://fom.in.ua/echo">
+        <ul>
+            <li>
+             <label for=""> Тип кузова
+                <input type="text" id="кузова" name="тип кузова" placeholder="ввести данные">
+             </label>   
+            </li>
+            <li>
+                <label for=""> Марка авто
+                    <input type="text" id="марка" name="марка авто" placeholder="ввести данные">
+                </label>
+            </li>
+            <li>
+                <label for=""> Страна производитель
+                    <input type="text" id="производитель" name="страна производитель" placeholder="ввести данные">
+                </label>
+            </li>
+            <li>
+                <label class="slidecontainer"> Цена от
+                    <input type="range" min="1" max="100000" value="20000" class="slider" id="цена от">
+                </label>
+                <label class="slidecontainer"> Цена до
+                    <input type="range" min="1" max="100000" value="5000" class="slider" id="цена до">
+                </label>
+            </li>
+            <li>
+                <label for=""> Год выпуска от
+                    <input type="text" id="год от" name="год выпуска" placeholder="ввести данные">
+                </label>
+                <label for=""> до
+                    <input type="text" id="год до" name="год выпуска" placeholder="ввести данные">
+                </label>
+            </li>
+            <li>
+                <p>Состояние авто</p>
+                <label type="text"> Поддерженое
+                    <input type="checkbox" id="состояние" name="Б\У">
+                </label>
+                <br>
+                <label type="text"> Новое
+                    <input type="checkbox" id="состояние" name="новое">
+                </label>
+                <br>
+                <label type="text"> Нерастаможенные
+                    <input type="checkbox" id="нерастаможенные" name="нерастаможенные">
+                </label>
+                <br>
+                <label type="text"> В кредите
+                    <input type="checkbox" id="кредит" name="в кредите">
+                </label>
+                </li>
+            
+        </ul>
+    </form>   
     
 </body>
 </html>
